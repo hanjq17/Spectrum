@@ -50,7 +50,6 @@ def worker(
             pipeline.unet.__class__.forward = our_sdxl_forward
         else:
             raise NotImplementedError(f"Model {config.model.model_name} not implemented.")
-        pipeline.unet.enable_teacache = True
         pipeline.unet.cnt = 0
         pipeline.unet.num_consecutive_cached_steps = 0
         pipeline.unet.num_steps = num_inference_steps

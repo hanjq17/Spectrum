@@ -24,6 +24,8 @@ Please give us a star ⭐ if you find our work interesting!
 
 ![Overview](assets/img_qualitative_study.png "Overview")
 
+🚀🚀 Also checkout our previous work [CHORDS](https://github.com/hanjq17/CHORDS) on multi-core diffusion sampling acceleration, accepted at ICCV 2025!
+
 ## 🛠 Dependencies
 
 Our code relies on the following core packages:
@@ -137,6 +139,10 @@ bash scripts/run_mp_video.sh
 Please consider citing our work if you find it useful:
 
 TODO
+
+## 🗒️ Acknowledgments
+
+Part of the code was inspired by [TaylorSeer](https://github.com/Shenyi-Z/TaylorSeer). We thank the authors for open-sourcing the codebase.
 
 ## 🧩 Contact and Community Contribution
 

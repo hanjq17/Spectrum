@@ -1,3 +1,8 @@
+"""
+Inherited from TaylorSeer:
+https://github.com/Shenyi-Z/TaylorSeer/blob/main/TaylorSeers-Diffusers/taylorseer_flux/cache_functions/cache_init.py
+"""
+
 def cache_init(self):
     """
     Initialization for cache.
