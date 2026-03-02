@@ -54,11 +54,6 @@ def worker(
         pipeline.unet.num_consecutive_cached_steps = 0
         pipeline.unet.num_steps = num_inference_steps
 
-        pipeline.unet.pre_firstblock_hidden_states = None
-        pipeline.unet.previous_residual = None
-        pipeline.unet.pre_compute_hidden = None
-        pipeline.unet.predict_loss = None
-        pipeline.unet.predict_hidden_states = None
         pipeline.unet.warmup_steps = config.warmup_steps
         if config.window_size is not None:
             pipeline.unet.window_size = config.window_size

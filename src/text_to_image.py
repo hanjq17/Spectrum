@@ -57,11 +57,6 @@ def worker(
         pipeline.transformer.num_consecutive_cached_steps = 0
         pipeline.transformer.num_steps = num_inference_steps
 
-        pipeline.transformer.pre_firstblock_hidden_states = None
-        pipeline.transformer.previous_residual = None
-        pipeline.transformer.pre_compute_hidden = None
-        pipeline.transformer.predict_loss = None
-        pipeline.transformer.predict_hidden_states = None
         pipeline.transformer.warmup_steps = config.warmup_steps
         if config.window_size is not None:
             pipeline.transformer.window_size = config.window_size

@@ -75,19 +75,11 @@ def our_wan_forward(
         cur_cnt = self.cnt
         cur_num_consecutive_cached_steps = self.num_consecutive_cached_steps
         cur_curr_ws = self.curr_ws
-        cur_pre_firstblock_hidden_states = self.pre_firstblock_hidden_states
-        cur_predict_hidden_states = self.predict_hidden_states
-        cur_predict_loss = self.predict_loss
-        cur_pre_compute_hidden = self.pre_compute_hidden
         cur_actual_forward_counter = self.actual_forward_counter
     else:
         cur_cnt = self.cnt_uncond
         cur_num_consecutive_cached_steps = self.num_consecutive_cached_steps_uncond
         cur_curr_ws = self.curr_ws_uncond
-        cur_pre_firstblock_hidden_states = self.pre_firstblock_hidden_states_uncond
-        cur_predict_hidden_states = self.predict_hidden_states_uncond
-        cur_predict_loss = self.predict_loss_uncond
-        cur_pre_compute_hidden = self.pre_compute_hidden_uncond
         cur_actual_forward_counter = self.actual_forward_counter_uncond
     
     actual_forward = True
@@ -159,19 +151,11 @@ def our_wan_forward(
         self.cnt = cur_cnt
         self.num_consecutive_cached_steps = cur_num_consecutive_cached_steps
         self.curr_ws = cur_curr_ws
-        self.pre_firstblock_hidden_states = cur_pre_firstblock_hidden_states
-        self.predict_hidden_states = cur_predict_hidden_states
-        self.predict_loss = cur_predict_loss
-        self.pre_compute_hidden = cur_pre_compute_hidden
         self.actual_forward_counter = cur_actual_forward_counter
     else:
         self.cnt_uncond = cur_cnt
         self.num_consecutive_cached_steps_uncond = cur_num_consecutive_cached_steps
         self.curr_ws_uncond = cur_curr_ws
-        self.pre_firstblock_hidden_states_uncond = cur_pre_firstblock_hidden_states
-        self.predict_hidden_states_uncond = cur_predict_hidden_states
-        self.predict_loss_uncond = cur_predict_loss
-        self.pre_compute_hidden_uncond = cur_pre_compute_hidden
         self.actual_forward_counter_uncond = cur_actual_forward_counter
 
     if not return_dict:
