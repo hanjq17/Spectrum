@@ -1,0 +1,3 @@
+model_name: "sdxl"
+model_path: "stabilityai/stable-diffusion-xl-base-1.0"
+dtype: "float16"

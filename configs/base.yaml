@@ -1,0 +1,19 @@
+defaults:
+  - _self_
+  - /algo: spectrum
+  - /model: flux
+
+prompt_file: prompts/coco_captions.txt
+output_base_path: output_samples
+ngpu: 4
+
+num_inference_steps: 50
+seed: 42
+
+exp_name: "temp"
+
+window_size: null
+flex_window: false
+
+warmup_steps: 5
+total_prompt_num: 100

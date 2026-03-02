@@ -1,0 +1,8 @@
+model_name: "wan14b"
+model_path: "Wan-AI/Wan2.1-T2V-14B-Diffusers"
+dtype: "bfloat16"
+height: 480
+width: 832
+num_frames: 81
+fps: 16
+guidance_scale: 5.0

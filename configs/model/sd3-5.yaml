@@ -1,0 +1,4 @@
+model_name: "sd3-5"
+model_path: "stabilityai/stable-diffusion-3.5-large"
+dtype: "bfloat16"
+guidance_scale: 7.0

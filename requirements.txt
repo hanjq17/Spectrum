@@ -1,0 +1,10 @@
+# The specific combination of the package versions below has been verified
+torch==2.7.1
+transformers==4.51.1
+diffusers==0.34.0
+accelerate
+hydra-core
+protobuf  # for flux
+imageio
+imageio-ffmpeg
+ftfy  # for wan2.1
