@@ -7,7 +7,7 @@ Jiaqi Han* $^1$, Juntong Shi* $^1$, Puheng Li $^1$, Haotian Ye $^1$, Qiushan Guo
 **$^1$ Stanford University**   **$^2$ ByteDance**   
 
 <p>
-<a href='TODO'><img src='https://img.shields.io/static/v1?&logo=arxiv&label=Paper&message=Arxiv:Spectrum&color=B31B1B'></a>
+<a href='https://arxiv.org/abs/2603.01623'><img src='https://img.shields.io/static/v1?&logo=arxiv&label=Paper&message=Arxiv:Spectrum&color=B31B1B'></a>
 <a href='https://hanjq17.github.io/Spectrum/'><img src='https://img.shields.io/badge/Project-Page-blue'></a>
 </p>
 
@@ -138,7 +138,14 @@ bash scripts/run_mp_video.sh
 
 Please consider citing our work if you find it useful:
 
-TODO
+```
+@article{han2026adaptive,
+  title={Adaptive Spectral Feature Forecasting for Diffusion Sampling Acceleration},
+  author={Han, Jiaqi and Shi, Juntong and Li, Puheng and Ye, Haotian and Guo, Qiushan and Ermon, Stefano},
+  journal={arXiv preprint arXiv:2603.01623},
+  year={2026}
+}
+```
 
 ## 🗒️ Acknowledgments
 
