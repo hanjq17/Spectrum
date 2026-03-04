@@ -16,15 +16,18 @@ Jiaqi Han* $^1$, Juntong Shi* $^1$, Puheng Li $^1$, Haotian Ye $^1$, Qiushan Guo
 
 ## 🎯 Overview
 
+![Illustration](assets/illustration.png "Illustration")
+
+
 We propose *Spectrum*, a training-free *spectral* diffusion feature forecaster that enables global, long-range feature reuse with tightly controlled error. We view the latent features of the denoiser as functions over time and approximate them with *Chebyshev polynomials*. Specifically, we fit the coefficient for each basis via ridge regression, which is then leveraged to forecast features at multiple future diffusion steps. We theoretically reveal that our approach admits more favorable long-horizon behavior and yields an error bound that does not compound with the step size.
 
-Extensive experiments on various state-of-the-art image and video diffusion models consistently verify the superiority of our approach. Notably, we achieve up to $4.79\times$ speedup on FLUX.1 and $4.67\times$ speedup on Wan2.1-14B, while maintaining much higher sample quality compared with the baselines.
+Extensive experiments on various state-of-the-art image and video diffusion models consistently verify the superiority of our approach. Notably, we achieve up to $4.79\times$ speedup on FLUX.1 and $4.67\times$ speedup on Wan2.1-14B, while maintaining much higher sample quality compared with the baselines. See more demos on our [Project Page](https://github.com/hanjq17/Spectrum).
 
 Please give us a star ⭐ if you find our work interesting!
 
 ![Overview](assets/img_qualitative_study.png "Overview")
 
-🚀🚀 Also checkout our previous work [CHORDS](https://github.com/hanjq17/CHORDS) on multi-core diffusion sampling acceleration, accepted at ICCV 2025!
+🚀 Also checkout our previous work [CHORDS](https://github.com/hanjq17/CHORDS) on multi-core diffusion sampling acceleration, accepted at ICCV 2025!
 
 ## 🛠 Dependencies
 
