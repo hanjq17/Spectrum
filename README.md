@@ -79,7 +79,7 @@ python src/text_to_image.py \
 For `model` we currently support:
 - `flux`: [Flux](https://huggingface.co/black-forest-labs/FLUX.1-dev)
 - `sd3-5`: [Stable Diffusion 3.5-Large](https://huggingface.co/stabilityai/stable-diffusion-3.5-large)
-- `sdxl`: [SDXL](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0) (please use python src/text_to_image_sdxl.py to launch)
+- `sdxl`: [SDXL](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0) (please use `python src/text_to_image_sdxl.py` to launch)
 
 `algo.w` is by default set to 1.0, which recovers our Chebyshev predictor. Post publication, we also find that a convex mixture of our spectral predictor with linear interpolation slightly enhances robustness across a wider range of acceleration ratios. We recommend setting `algo.w` between 0.5 and 1.0.
 
@@ -99,6 +99,8 @@ For `model` we currently support:
 
 For full functionality of the script, please refer to the arguments and their default values (such as the number of inference steps, the resolution of the image, etc.) under the `configs` folder, which is parsed by hydra.
 
+**Remarks:** `window_size=2` and `flex_window=0.75` recovers the $\alpha=0.75$ setting in the paper with 14 full network passes (~3.5 $\times$ speedup). For more aggressive acceleration, use `windowsize=2` and `flex_window=3.0`, which corresponds to the $\alpha=3.0$ setting in the paper with 10 network passes (~5 $\times$ speedup).
+
 We also provide a boilerplate script to launch the inference:
 ```bash
 # For Flux and Stable Diffusion 3.5-Large
@@ -113,7 +115,7 @@ Similarly, the following script can be used for video generation with *Spectrum*
 
 ```bash
 CUDA_VISIBLE_DEVICES=0 \
-python src/text_to_image.py \
+python src/text_to_video.py \
     model=hunyuan \
     algo=spectrum \
     algo.w=0.5 \
@@ -136,6 +138,8 @@ We also provide a boilerplate script to launch the inference:
 # For HunyuanVideo and Wan2.1-14B
 bash scripts/run_mp_video.sh
 ```
+
+**Remark:** For high-resolution video generation, change `model.height`, `model.width`, and `model.num_frames` to your specific choice. For exmaple, we use 1080x720x129f setting with HunyuanVideo for the qualitative examples.
 
 ## 📌 Citation
 

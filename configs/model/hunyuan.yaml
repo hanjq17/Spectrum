@@ -1,8 +1,8 @@
 model_name: "hunyuan"
 model_path: "hunyuanvideo-community/HunyuanVideo"
 dtype: "bfloat16"
-height: 544
-width: 960
-num_frames: 61
+height: 544  # 720
+width: 960 # 1280
+num_frames: 61 # 129
 fps: 24
 guidance_scale: 6.0
