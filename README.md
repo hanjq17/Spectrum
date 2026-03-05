@@ -99,7 +99,7 @@ For `model` we currently support:
 
 For full functionality of the script, please refer to the arguments and their default values (such as the number of inference steps, the resolution of the image, etc.) under the `configs` folder, which is parsed by hydra.
 
-**Remarks:** `window_size=2` and `flex_window=0.75` recovers the $\alpha=0.75$ setting in the paper with 14 full network passes (~$3.5\times$ speedup). For more aggressive acceleration, use `window_size=2` and `flex_window=3.0`, which corresponds to the $\alpha=3.0$ setting in the paper with 10 network passes (~$5\times$ speedup).
+**Remarks:** `window_size=2` and `flex_window=0.75` recovers the $\alpha=0.75$ setting in the paper with 14 full network passes ($\approx 3.5\times$ speedup). For more aggressive acceleration, use `window_size=2` and `flex_window=3.0`, which corresponds to the $\alpha=3.0$ setting in the paper with 10 network passes ($\approx 5\times$ speedup).
 
 We also provide a boilerplate script to launch the inference:
 ```bash
