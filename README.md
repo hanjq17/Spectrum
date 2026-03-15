@@ -57,7 +57,7 @@ We use hydra to organize different hyperparameters for the image/video diffusion
 
 ### ⭐ Text-to-Image (T2I)
 
-The command below is an example to perform image generation on Flux using CHORDS on 8 GPUs.
+The command below is an example to perform image generation on Flux using 1 GPU.
 
 ```bash
 CUDA_VISIBLE_DEVICES=0 \
@@ -81,7 +81,7 @@ For `model` we currently support:
 - `sd3-5`: [Stable Diffusion 3.5-Large](https://huggingface.co/stabilityai/stable-diffusion-3.5-large)
 - `sdxl`: [SDXL](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0) (please use `python src/text_to_image_sdxl.py` to launch)
 
-`algo.w` is by default set to 1.0, which recovers our Chebyshev predictor. Post publication, we also find that a convex mixture of our spectral predictor with linear interpolation slightly enhances robustness across a wider range of acceleration ratios. We recommend setting `algo.w` between 0.5 and 1.0.
+`algo.w` is by default set to 1.0, which recovers our Chebyshev predictor. Post publication, we also find that a convex mixture of our spectral predictor with linear interpolation slightly enhances robustness across a wider range of acceleration ratios. We recommend setting `algo.w` between 0.5 and 1.0, with a relatively larger value of `algo.w` when enabling more aggressive speedups (see `flex_window`).
 
 `algo.lam` refers to the regularization strength $\lambda$ in the paper. By default set to 0.1.
 
@@ -89,7 +89,7 @@ For `model` we currently support:
 
 `window_size` refers to the initial window size $\mathcal{N}$ in the paper.
 
-`flex_window` refers to the hyperparameter $\alpha$ in the paper. Notably, $\mathcal{N}$ and $\alpha$ defines the sequence of diffusion steps to perform actual forward pass of the denoiser. More details are in Appendix B.1 and Table 6 in the paper.
+`flex_window` refers to the hyperparameter $\alpha$ in the paper. Notably, $\mathcal{N}$ and $\alpha$ defines the sequence of diffusion steps to perform actual forward pass of the denoiser. More details are in Appendix B.1 and Table 6 in the paper. A larger value of $\alpha$ corresponds to fewer actual network forwards, leading to larger speedup.
 
  `ngpu` corresponds to the number of GPUs to use in parallel. We split all prompts equally to several gpus to speedup the benchmark for all methods. Note that it should match `CUDA_VISIBLE_DEVICES`.
  
