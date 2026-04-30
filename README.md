@@ -27,7 +27,13 @@ Please give us a star ⭐ if you find our work interesting!
 
 ![Overview](assets/img_qualitative_study.png "Overview")
 
-🚀 Also checkout our previous work [CHORDS](https://github.com/hanjq17/CHORDS) on multi-core diffusion sampling acceleration, accepted at ICCV 2025!
+⭐ Also checkout our previous work [CHORDS](https://github.com/hanjq17/CHORDS) on multi-core diffusion sampling acceleration, accepted at ICCV 2025!
+
+## 📰 Updates
+🚀🚀🚀 **Check out [ComfyUI-Spectrum-SDXL](https://github.com/ruwwww/comfyui-spectrum-sdxl) for a community implementation of Spectrum ComfyUI workflow on SDXL-based models! Huge thanks to [ruwwww](https://github.com/ruwwww)!!**
+
+🚀🚀🚀 **Check out [ComfyUI-Spectrum](https://github.com/judian17/ComfyUI-Spectrum) for a community implementation of Spectrum ComfyUI workflow on a wide suite of models, including e.g. FLUX-based models, Qwen Image, Z Image Turbo, HunyuanVideo and Wan2.2! Huge thanks to [judian17](https://github.com/judian17)!!**
+
 
 ## 🛠 Dependencies
 
@@ -99,7 +105,7 @@ For `model` we currently support:
 
 For full functionality of the script, please refer to the arguments and their default values (such as the number of inference steps, the resolution of the image, etc.) under the `configs` folder, which is parsed by hydra.
 
-**Remarks:** `window_size=2` and `flex_window=0.75` recovers the $\alpha=0.75$ setting in the paper with 14 full network passes ($\approx 3.5\times$ speedup). For more aggressive acceleration, use `window_size=2` and `flex_window=3.0`, which corresponds to the $\alpha=3.0$ setting in the paper with 10 network passes ($\approx 5\times$ speedup).
+**Remark:** `window_size=2` and `flex_window=0.75` recovers the $\alpha=0.75$ setting in the paper with 14 full network passes ($\approx 3.5\times$ speedup). For more aggressive acceleration, use `window_size=2` and `flex_window=3.0`, which corresponds to the $\alpha=3.0$ setting in the paper with 10 network passes ($\approx 5\times$ speedup).
 
 We also provide a boilerplate script to launch the inference:
 ```bash
