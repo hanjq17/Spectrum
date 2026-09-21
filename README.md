@@ -31,7 +31,7 @@ Please give us a star ⭐ if you find our work interesting!
 
 ## 📰 Updates
 
-🚀 **(Sep. 2026) Spectrum has been officially integrated into [SGLang project](https://github.com/sgl-project/sglang/pull/31491)! Huge thanks to the SGLang team for recognizing our work and deploy the algorithm at production level! Try it out in SGLang!**
+🚀 **(Sep. 2026) Spectrum has been officially integrated into [SGLang project](https://github.com/sgl-project/sglang/pull/31491)! Huge thanks to the SGLang team for recognizing our work and deploying the algorithm at production level! Try it out in SGLang!**
 
 🚀 **(Apr. 2026) Check out [ComfyUI-Spectrum-SDXL](https://github.com/ruwwww/comfyui-spectrum-sdxl) for a community implementation of Spectrum ComfyUI workflow on SDXL-based models! Huge thanks to [ruwwww](https://github.com/ruwwww)!!**
 
