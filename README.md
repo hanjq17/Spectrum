@@ -30,9 +30,12 @@ Please give us a star ⭐ if you find our work interesting!
 ⭐ Also checkout our previous work [CHORDS](https://github.com/hanjq17/CHORDS) on multi-core diffusion sampling acceleration, accepted at ICCV 2025!
 
 ## 📰 Updates
-🚀🚀🚀 **Check out [ComfyUI-Spectrum-SDXL](https://github.com/ruwwww/comfyui-spectrum-sdxl) for a community implementation of Spectrum ComfyUI workflow on SDXL-based models! Huge thanks to [ruwwww](https://github.com/ruwwww)!!**
 
-🚀🚀🚀 **Check out [ComfyUI-Spectrum](https://github.com/judian17/ComfyUI-Spectrum) for a community implementation of Spectrum ComfyUI workflow on a wide suite of models, including e.g. FLUX-based models, Qwen Image, Z Image Turbo, HunyuanVideo and Wan2.2! Huge thanks to [judian17](https://github.com/judian17)!!**
+🚀 **(Sep. 2026) Spectrum has been officially integrated into [SGLang project](https://github.com/sgl-project/sglang/pull/31491)! Huge thanks to the SGLang team for recognizing our work and deploy the algorithm at production level! Try it out in SGLang!**
+
+🚀 **(Apr. 2026) Check out [ComfyUI-Spectrum-SDXL](https://github.com/ruwwww/comfyui-spectrum-sdxl) for a community implementation of Spectrum ComfyUI workflow on SDXL-based models! Huge thanks to [ruwwww](https://github.com/ruwwww)!!**
+
+🚀 **(Apr. 2026) Check out [ComfyUI-Spectrum](https://github.com/judian17/ComfyUI-Spectrum) for a community implementation of Spectrum ComfyUI workflow on a wide suite of models, including e.g. FLUX-based models, Qwen Image, Z Image Turbo, HunyuanVideo and Wan2.2! Huge thanks to [judian17](https://github.com/judian17)!!**
 
 
 ## 🛠 Dependencies
